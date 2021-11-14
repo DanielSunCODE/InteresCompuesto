@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interes Compuesto</title>
+</head>
+<body>
+    <h1 class="titulo">Calcula tu ganacia con interés compuesto</h1>
+
+    <div class="benefits">
+        <h2 class="benefits__title">Tu has logrado ganar</h2>
+        <div class="benefits__total"></div>
+    </div>
+
+    <div class="inputs-div">
+        <label for="return">Retorno <span id="returnPorcentage">0%</span></label>
+        <br>
+        <input type="range" placeholder="Retorno" name="return" id="return" value="0" required> 
+        <br>
+        <label for="income">Contribución</label>
+        <br>
+        <input type="number" placeholder="Ingreso" name="income" id="income" required>
+        <br>
+        <label for="time">Tiempo de inversión</label>
+        <br>
+        <input type="number" placeholder="Número de años" name="time" id="time" required>
+        <div class="periodo" id="timeOptions">
+            <input type="radio" class="timeOption" name="timeOption" value="months">Meses
+            <input type="radio" class="timeOption" name="timeOption" checked value="years">Años
+        </div>
+        <br>
+        <label for="initialDeposit">Deposito Inicial</label>
+        <br>
+        <input type="number" value="0" name="initialDeposit" id="initialDeposit" required>
+        <button class="calcular">Calcular</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
